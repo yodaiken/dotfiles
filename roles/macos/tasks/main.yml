@@ -15,12 +15,12 @@
   homebrew_cask: name={{item}} state=present
   with_items: '{{mac_cask_packages}}'
 
-- name: Install mas
-  homebrew: name=mas state=present
+# - name: Install mas
+#   homebrew: name=mas state=present
 
-- name: Install Mac-App-Store-only apps with mas
-  command: mas install {{item.id}}
-  args:
-    creates: "/Applications/{{item.name}}.app"
-  with_items: '{{mac_mas_packages}}'
-  tags: mas
+# - name: Install Mac-App-Store-only apps with mas
+#   command: mas install {{item.id}}
+#   args:
+#     creates: "/Applications/{{item.name}}.app"
+#   with_items: '{{mac_mas_packages}}'
+#   tags: mas
