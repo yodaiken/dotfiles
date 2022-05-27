@@ -3,7 +3,7 @@ dotfiles
 
 [sloria's dotfiles](https://github.com/sloria/dotfiles-old), rewritten as Ansible roles. Sets up a full local development environment with a **single command.**
 
-Fully supports macOS. Red Hat and Debian support is good but not as complete.
+Fully supports macOS
 
 a few neat features
 -------------------
@@ -181,15 +181,6 @@ mv ~/.local/pipx ~/.local/pipx.bak
 
 dot-update pipx
 ```
-
-todo
-----
-
-- Full Debian and Red Hat support
-
-[homebrew]: http://brew.sh/
-[homebrew-cask]: https://github.com/caskroom/homebrew-cask
-[mas]: https://github.com/mas-cli/mas
 
 
 license

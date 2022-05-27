@@ -80,3 +80,17 @@ if [[ -a ~/.localrc ]]
 then
   source ~/.localrc
 fi
+
+export PATH="$HOME/.poetry/bin:$PATH"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export DIGITALOCEAN_TOKEN=$(cat "$HOME/.config/DO" | xargs)
+set -a && source $HOME/.config/DO-SPACES && set +a
+
+export PATH="$HOME/bin:$PATH"
+
+
+# export DOCKER_HOST=ssh://root@167.172.246.67

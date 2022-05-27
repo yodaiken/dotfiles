@@ -6,7 +6,7 @@
 # http://zanshin.net/2013/09/03/how-to-use-homebrew-zsh-instead-of-max-os-x-default/
 - name: Add zsh to /etc/shells
   lineinfile:
-    line: /usr/local/bin/zsh
+    line: /opt/homebrew/bin/zsh
     dest: /etc/shells
     state: present
   register: zsh_shells
@@ -14,7 +14,7 @@
   become_method: sudo
 
 - name: Change default shell to zsh
-  command: chsh -s /usr/local/bin/zsh
+  command: chsh -s /opt/homebrew/bin/zsh
   # Only run this if above task was changed
   when: zsh_shells.changed
 
